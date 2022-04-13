@@ -15,10 +15,10 @@ export class QuotesListComponent implements OnInit {
   }
 
   quotes: Quotes[] = [
-    {id: 1, author: 'Edward kevin', quote: 'This is quote number one', dateAdded: new Date(2022,4,7), user: 'Ian', upvote: 0, downvote: 0},
-    {id: 2, author: 'john kevin', quote: 'This is quote number two', dateAdded: new Date(2022,4,7), user: 'leon', upvote: 0, downvote: 0},
-    {id: 3, author: 'Doe kevin', quote: 'This is quote number three', dateAdded: new Date(2022,4,7), user: 'dan', upvote: 0, downvote: 0},
-    {id: 4, author: 'Gerald kevin', quote: 'This is quote number four', dateAdded: new Date(2022,4,7), user: 'fello', upvote: 0, downvote: 0},
+    {id: 1, author: 'Elbert Hubbard', quote: 'Positive anything is better than negative nothing.', dateAdded: new Date(2022,4,7), user: 'Samwel Odhiambo', upvote: 0, downvote: 0},
+    {id: 2, author: 'Zig Ziglar', quote: 'One small positive thought can change your whole day.', dateAdded: new Date(2022,4,7), user: 'Leon James', upvote: 0, downvote: 0},
+    {id: 3, author: 'Joyce Meyer', quote: 'You cannot have a positive life and a negative mind.', dateAdded: new Date(2022,4,7), user: 'Dan', upvote: 0, downvote: 0},
+    {id: 4, author: 'Widad Akrawi', quote: "If you are positive, you’ll see opportunities instead of obstacles.", dateAdded: new Date(2022,4,7), user: 'Felix Lloyd', upvote: 0, downvote: 0},
   ];
 
   deleteBtn(isDeleted: boolean, index: number){

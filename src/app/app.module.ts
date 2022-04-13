@@ -7,6 +7,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { BannerComponent } from './banner/banner.component';
 import { QuotesListComponent } from './quotes-list/quotes-list.component';
 import { AddQuoteComponent } from './add-quote/add-quote.component';
+import { RatingComponent } from './rating/rating.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { AddQuoteComponent } from './add-quote/add-quote.component';
     NavigationComponent,
     BannerComponent,
     QuotesListComponent,
-    AddQuoteComponent
+    AddQuoteComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

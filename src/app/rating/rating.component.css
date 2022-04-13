@@ -1,0 +1,9 @@
+span .fa-thumbs-up {
+    cursor: pointer;
+    color: green;
+}
+
+span .fa-thumbs-down {
+    cursor: pointer;
+    color: red;
+}

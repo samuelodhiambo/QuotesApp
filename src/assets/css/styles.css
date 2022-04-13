@@ -1,6 +1,8 @@
 .scroll {
   position: relative;
-  height: 200px;
+  height: 230px;
   overflow: auto;
+  border: 1px solid gray;
+  padding: 10px;
 }
 

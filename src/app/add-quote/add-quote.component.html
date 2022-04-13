@@ -1,1 +1,42 @@
-<p>add-quote works!</p>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <form #quoteForm="ngForm" (ngSubmit)="submitQuote(quoteForm)" class="w-100">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ADD QUOTE</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Author</label>
+                    <input type="text" name="author" class="form-control" [(ngModel)]="newQuote.author" #author="ngModel" id="exampleFormControlInput1" placeholder="e.g John Doe" required>
+                    <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                        <p>Author is required</p>
+                      </div>
+                    Display {{ newQuote.author }}
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Quote</label>
+                    <textarea class="form-control" name="quote" [(ngModel)]="newQuote.quote" #quote="ngModel" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                    <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                        <p>Quote is required</p>
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                    <input type="text" name="user" [(ngModel)]="newQuote.user" #user="ngModel" class="form-control" id="exampleFormControlInput1" placeholder="e.g John Doe" required>
+                    <div [hidden]="user.valid || user.pristine" class="alert alert-danger">
+                        <p>Your Name is required</p>
+                      </div>
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save Changes</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
